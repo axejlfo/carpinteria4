@@ -16,6 +16,10 @@ class CreateProveedorsTable extends Migration
         Schema::create('proveedors', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string("nom_prov",45);
+            $table->integer("tel_prov");
+            $table->boolean("est_prov");
+
         });
     }
 
